@@ -1,25 +1,25 @@
-{%extends 'plantillaUser.html'%}
+{%extends 'plantilla.html'%}
 {%block content%}
-    <div class="form-container">
+    <div class="container text-center col-5 mt-5">
         <h2>Guardar datos del paciente</h2>
         <form action="" method="post">
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label for="nombre">Nombre </label>
                 <input type="text" class="form-control" id="nombre" name="txtNombre">
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label for="apellidoP">Apellido Paterno:</label>
                 <input type="text" class="form-control" id="apellidoP" name="txtApePaterno">
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label for="apellidoM">Apellido Materno:</label>
                 <input type="text" class="form-control" id="apellidoM" name="txtApeMaterno">
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label for="fecha">Fecha de nacimiento:</label>
                 <input type="date" class="form-control" id="fecha" name="txtFecha">
             </div>
-            <div class="form-group">
+            <div class="form-group mt-2">
                 <label for="txtSexo">Genero:</label>
                 <select class="form-control" id="rol" name="txtSexo">
                     <option selected>Selecciona una opción</option>
@@ -27,7 +27,8 @@
                     <option value="2">Masculino</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-info">Agregar paciente</button>
+
+            <button type="submit" class="btn btn-info mt-3">Agregar paciente</button>
         </form>
     </div>
 {%endblock%}
