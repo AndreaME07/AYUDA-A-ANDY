@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request, session, flash, url_for
+from flask import Flask, render_template, redirect, request, session, flash, url_for, sessions
 from flask_mysqldb import MySQL
 from functools import wraps
 
@@ -48,14 +48,16 @@ def agregarPaciente():
     return render_template('opciones/agregarPaciente.html') 
 
 
-
 @app.route('/mostrarCitas')
 def mostrarCitas():
     return render_template('vistas/mostrarCitas.html') 
 
 @app.route('/exploracionPaciente')
 def exploracionPaciente():
-    return render_template('exploracionPaciente.html') 
+    return render_template('vistas/exploracionPaciente.html') 
+
+# ---------
+
 
 @app.route('/diagnostico')
 def diagnostico():
